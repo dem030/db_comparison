@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"owner_id":{"$numberInt":"1"}},"name":"owner_id_1"},{"v":{"$numberInt":"2"},"key":{"comp_id":{"$numberInt":"1"}},"name":"comp_id_1"}],"uuid":"35f39e82098c47bc85eec0009c72c496","collectionName":"shareholders","type":"collection"}
