@@ -264,7 +264,7 @@ const query4 = db.shares.aggregate([
   {
     "$lookup": {
       "from": "persons",
-     " localField": "owner_id",
+      "localField": "owner_id",
       "foreignField": "pers_id",
       "as": "ownerInfo",
     },
@@ -273,10 +273,10 @@ const query4 = db.shares.aggregate([
 
   // 2. Raggruppiamo per azienda e per proprietario per sommare le percentuali possedute
   {
-   " $group": {
+   "$group": {
       "_id": {
         "comp_id": "$comp_id",
-       " owner": "$ownerInfo", // l'intero documento della persona
+        "owner": "$ownerInfo", // l'intero documento della persona
       },
       "ownerPercentage": { "$sum": "$percentage" },
     },
